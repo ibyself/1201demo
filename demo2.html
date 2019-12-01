@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>评论框</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width:500px;
+				height:200px;
+				border:1px solid #87CEEB;
+				margin:100px auto 0;
+				border-radius: 10px;
+				position: relative;
+				background: url('img/cy-logo.png') no-repeat center;
+			}
+			.top{
+				width:70px;
+				height:70px;
+				border: 1px solid #87CEEB;
+				position:absolute;
+				top:-55px;
+				left:30px;
+				background: #fff;
+				border-radius:50%;
+			}
+			.mask{
+				position:absolute;
+				width:72px;
+				height:72px;
+				background: #fff;
+				left:30px;
+				top:-73px;
+			}
+			.dr{
+				width:60px;
+				height:60px;
+				border:1px solid #87CEEB;
+				border-radius:50%;
+				position:absolute;
+				z-index: 5;
+				left:4px;
+				top:0;
+				color:skyblue;
+				background: #FFFFFF;
+				text-align: center;
+				line-height: 60px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<div class="dr">登录</div>
+			</div>
+			<div class="mask"></div>
+		</div>
+	</body>
+</html>

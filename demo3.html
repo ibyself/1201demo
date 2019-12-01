@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>光斑动画</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: #000;
+			}
+			.box{
+				font-size: 60px;
+				color: rgba(255,255,255,.5);
+				text-align: center;
+				margin-top: 200px;
+				background-image: linear-gradient(135deg,rgba(255,255,255,0) 60px,rgba(255,255,255,1) 120px,rgba(255,255,255,0) 180px);
+				background-position: 150px 0px;
+				background-repeat:no-repeat;
+				-webkit-background-clip:text;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="box" id='box'>付出总有收获,时间早晚而已！</h1>
+		<script>
+			var box=document.getElementById('box');
+			var num=150;
+			setInterval(function(){
+				num+=20;
+				if(num>950){
+					num=150;
+				}
+				box.style.backgroundPosition=num+'px 0px';
+			},60);
+		</script>
+	</body>
+</html>
